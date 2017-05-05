@@ -1,0 +1,29 @@
+,skype basic free,gotomeeting regular,google hangouts,google hangouts for business,Talky,Zoho free,Zoho professional
+Dial ins must install client software(not a plugin).,Y,N,N,N,N,N,N
+Dial ins must install plugin software.,N,N,Y,Y,N,N,N
+Host must install client software.,Y,N,Y,Y,N,Y,Y
+Dial ins must have account.,Y,N,Y,Y,N,N,N
+Dial ins support Internet Explorer.,N,Y,Y,Y,N,N,N
+Dial ins support Chrome.,N,Y,Y,Y,Y,Y,Y
+Dial ins support Firefox.,N,Y,N,N,Y,Y,Y
+Dial ins support Opera.,N,N,N,N,Y,Y,Y
+Dial ins support Edge.,N,Y,Y,Y,Y,N,N
+Iphone App availability.,Y,Y,Y,Y,N,N,N
+Android App availability.,Y,Y,Y,Y,N,N,N
+Hardware helps you call in with this tool.,N,Y,Y,Y,N,N,N
+Voice Meeting room can hold up to 25 ppl,Y,Y,Y,Y,N,N,N
+Group Video calling can hold up to 5 ppl,Y,Y,Y,Y,Y,N,Y
+Group Video calling can hold up to 10 ppl,Y,N,Y,Y,Y,N,Y
+Group Video calling can hold up to 15 ppl,N,N,N,N,Y,N,Y
+Meeting scheduling,N,Y,Y,Y,N,N,Y
+Meeting recording,N,Y,N,N,N,N,N
+"Call me, no pincodes, call the number",N,Y,N,N,N,N,N
+Telephone dial-in.,Y,Y,Y,Y,N,Y,Y
+Toll free Telephone dial-in.,N,Y,N,N,N,Y,Y
+Chat function.,Y,Y,Y,Y,N,Y,Y
+Screensharing,Y,Y,Y,Y,Y,Y,Y
+Share files,Y,N,N,N,N,N,N
+Drawing tools.,N,Y,N,N,N,N,N
+Hand over control.,N,Y,N,N,N,Y,Y
+Works without a camera,Y,Y,Y,Y,N,Y,Y
+Is free,Y,N,Y,N,Y,Y,Y
