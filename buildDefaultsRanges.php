@@ -39,7 +39,7 @@ while (($data = fgetcsv($filehandle, 1000, ",")) !== FALSE) {
     $features []= $featureName;
     $featureId = idFy($featureName);
     for ($c=1; $c < $num; $c++) {
-        $result[$indexArray[$c]] [$featureId] = $data[$c] == "Y";
+        $result[$indexArray[$c]] [$featureId] = $data[$c];
     }
 }
 
