@@ -72,18 +72,22 @@ str += '<option value="1">must</option><option value="0">must not</option><optio
 }
 
 
-function selectChoice(title, id, $range)
+function selectChoice(title, id, min, max, current)
 {
-  str = '<label for="'+id+'">'+ title + '</label><input type="range" id="'+id + '"  value="' + $range + '" onChange="dofilterRange();">';
+  str = '<div data-role="main" class="ui-content">'+
+      '<label for="points">'+title+':</label>'+
+      '<input type="range" name="points" id="'+ id +'" value="' + current + '" min="' + min + '" max="' + max + '" onChange="dofilterRange();">'
+  '</div>';
   document.write(str);
 }
 
 function checkIfItemRangeOK(DOMidOfSelect, optionAvailableInProduct)
 {
-    var e = document.getElementById(DOMidOfSelect);
+    var e =  document.getElementById(DOMidOfSelect);
     if (e == null) throw "element with id " + DOMidOfSelect + " not found.";
-    var userValue = e.value;
-    return (userValue >= optionAvailableInProduct);
+    var userValue = parseInt(e.value);
+    var optionAvailableInProduct = parseInt(optionAvailableInProduct);
+    return (userValue < optionAvailableInProduct);
 }
 
 function checkIfItemOK(DOMidOfSelect, optionAvailableInProduct)
