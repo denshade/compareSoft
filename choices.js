@@ -76,8 +76,7 @@ function selectChoice(title, id, min, max, current)
 {
   str = '<div data-role="main" class="ui-content">'+
       '<label for="points">'+title+':</label>'+
-      '<input type="range" name="points" id="'+ id +'" value="' + current + '" min="' + min + '" max="' + max + '" onChange="dofilterRange();">'
-  '</div>';
+      '<input type="range" name="points" id="'+ id +'" value="' + current + '" min="' + min + '" max="' + max + '" onChange="dofilterRange();"></div>';
   document.write(str);
 }
 

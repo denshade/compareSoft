@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="choices.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body onload="dofilter();">
+<div id="container" class="container">
+    <h1>Comparing teleconference tools</h1>
+    <div class="panel panel-info">
+        <div class="panel-heading">Date of publication period.</div>
+        <div class="panel-body">2017 Q1</div>
+    </div>
+    <div>
+        <div class="panel panel-info">
+            <div class="panel-heading">Installation</div>
+            <div class="panel-body">
+                <script>
+                    selectDefault("Dial ins must install client software(not a plugin).", "Dial_ins_must_install_client_software(not_a_plugin).");
+                    selectDefault("Dial ins must install plugin software.", "Dial_ins_must_install_plugin_software.");
+                    selectDefault("Host must install client software.", "Host_must_install_client_software.");
+                    selectDefault("Dial ins must have account.", "Dial_ins_must_have_account.");
+                    selectDefault("Hardware helps you call in with this tool.", "Hardware_helps_you_call_in_with_this_tool.");
+                </script>
+            </div><!--end body-->
+        </div><!--end panel-->
+        <div class="panel panel-info">
+            <div class="panel-heading">Supported browsers and hardware</div>
+            <div class="panel-body">
+                <script>
+                    selectDefault("Dial ins support Internet Explorer.", "Dial_ins_support_Internet_Explorer.");
+                    selectDefault("Dial ins support Chrome.", "Dial_ins_support_Chrome.");
+                    selectDefault("Dial ins support Firefox.", "Dial_ins_support_Firefox.");
+                    selectDefault("Dial ins support Opera.", "Dial_ins_support_Opera.");
+                    selectDefault("Dial ins support Edge.", "Dial_ins_support_Edge.");
+                    selectDefault("Iphone App availability.", "Iphone_App_availability.");
+                    selectDefault("Android App availability.", "Android_App_availability.");
+
+                </script>
+            </div><!--end body-->
+        </div><!--end panel-->
+        <div class="panel panel-info">
+            <div class="panel-heading">User capacity and dial-in</div>
+            <div class="panel-body">
+                <script>
+                    selectChoice("Number of maximum attendees in group video conference.", "Group_Video_nr_of_participants", 5, 30, 10);
+                    selectDefault("Telephone dial-in.", "Telephone_dial-in.");
+                    selectDefault("Telephone dial-in is free for dial-in.", "Telephone_dial-in_is_free_for_dial-in.");
+                    selectDefault("Call me, no pincodes, call the number", "Call_me,_no_pincodes,_call_the_number");
+                </script>
+            </div><!--end body-->
+        </div><!--end panel-->
+
+        <div class="panel panel-info">
+            <div class="panel-heading">Convenience during the meeting</div>
+            <div class="panel-body">
+                <script>
+                    selectDefault("Meeting scheduling", "Meeting_scheduling");
+                    selectDefault("Meeting recording", "Meeting_recording");
+                    selectDefault("Chat function.", "Chat_function.");
+                    selectDefault("Screensharing", "Screensharing");
+                    selectDefault("Share files", "Share_files");
+                    selectDefault("Drawing tools.", "Drawing_tools.");
+                    selectDefault("Hand over control.", "Hand_over_control.");
+                </script>
+            </div><!--end body-->
+        </div><!--end panel-->
+
+    <div>
+        <div class="panel panel-success">
+            <div class="panel-heading">Potential solutions</div>
+            <div id="solutions" class="panel-body">
+                <div id="skype_basic_free" class="solution">skype basic free</div>
+                <div id="gotomeeting_regular" class="solution">gotomeeting regular</div>
+                <div id="google_hangouts" class="solution">google hangouts</div>
+                <div id="google_hangouts_for_business" class="solution">google hangouts for business</div>
+                <div id="talky" class="solution">talky</div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
